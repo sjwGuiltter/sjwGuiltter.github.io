@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./img/5cc2b5f7b3be7.jpg) no-repeat 0px 0px;
+}
+
+.head {
+    width: 200px;
+    margin-left: 400px;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.container {
+    display: flex;
+    margin-left: 50px;
+    position: relative;
+}
+
+.container img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+.yin {
+    text-shadow: 5px 5px 5px gray;
+}
+
+.info {
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.pic-wrap {
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid #000; */
+    position: relative;
+    overflow: hidden;
+    background-image: url(./img/5cc2b5f7b3be7.jpg) round 0px 0px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.pic-wrap:hover .pic {
+    transition: all 10s ease;
+    transform: translateY(800px);
+}
+
+.zi {
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0)
+}
+
+.pic {
+    height: 1000px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: -791px;
+    left: 0;
+}
+
+.pic>img {
+    width: 150px;
+}
+
+.dong {
+    position: absolute;
+    animation: dongdong 20s ease infinite;
+}
+
+.dong:hover {
+    animation-play-state: paused;
+}
+
+@keyframes dongdong {
+    20% {
+        margin-left: 100px;
+        margin-top: -10px;
+    }
+
+    40% {
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+
+    60% {
+        margin-left: 300px;
+        margin-top: 240px;
+    }
+
+    80% {
+        margin-left: 250px;
+        margin-top: -80px;
+    }
+
+    90% {
+        margin-left: 0px;
+        margin-top: 450px;
+    }
+
+    100% {
+        margin-left: 100px;
+        margin-top: -10px;
+    }
+}
+
+.d3:hover {
+    animation-play-state: paused;
+}
+
+.d3 {
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 405px;
+    left: 547px;
+    transform-style: preserve-3d;
+    /* transform: rotateY(50deg); */
+    transform: rotateX(30deg);
+    animation: zhuan 200s ease infinite;
+}
+
+@keyframes zhuan {
+    from {
+
+        transform: rotateX(-10deg) rotateY(0deg);
+    }
+
+    to {
+
+        transform: rotateX(-10deg) rotateY(7888deg);
+    }
+}
+
+.d3child {
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid #000; */
+    outline: 3px solid rgb(148, 216, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* transform: rotateX(-30deg); */
+}
+
+.one {
+    transform: translateZ(150px);
+}
+
+.two {
+    transform: rotateY(60deg) translateZ(150px);
+}
+
+.three {
+    transform: rotateY(120deg) translateZ(150px);
+}
+
+.four {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.five {
+    transform: rotateY(240deg) translateZ(150px);
+}
+
+.six {
+    transform: rotateY(300deg) translateZ(150px);
+}
