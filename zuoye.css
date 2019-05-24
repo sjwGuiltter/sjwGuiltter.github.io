@@ -36,7 +36,7 @@ body {
 
 .info {
     margin-left: 40px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .pic-wrap {
@@ -128,7 +128,7 @@ body {
     transform-style: preserve-3d;
     /* transform: rotateY(50deg); */
     transform: rotateX(30deg);
-    animation: zhuan 200s ease infinite;
+    animation: zhuan 400s ease infinite;
 }
 
 @keyframes zhuan {
